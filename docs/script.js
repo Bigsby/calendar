@@ -9,9 +9,16 @@ function addList(items, parent) {
     const list = document.createElement("ul");
     items.forEach(item => {
         if (!item.hide) {
-            const newElement = addElement("li", item.name, list);
+            const itemElement = addElement("li", item.name, list);
+            if (item.code) {
+                itemElement.classList.add("implemented");
+                addElement("span", " ", itemElement);
+                const codeLink = addElement("a", "code", itemElement);
+                codeLink.href = item.code;
+                codeLink.target = "_blank";
+            }
             if (item.subitems) {
-                addList(item.subitems, newElement);
+                addList(item.subitems, itemElement);
             }
         }
     });

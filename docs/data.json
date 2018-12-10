@@ -68,7 +68,8 @@
                     "subitems": [
                         {
                             "id": "js",
-                            "name": "JavaScript"
+                            "name": "JavaScript",
+                            "code": "https://github.com/Bigsby/organizer-frontend-valnilla-js"
                         },
                         {
                             "id": "ts",
