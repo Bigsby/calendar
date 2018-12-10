@@ -69,7 +69,7 @@
                         {
                             "id": "js",
                             "name": "JavaScript",
-                            "code": "https://github.com/Bigsby/organizer-frontend-valnilla-js"
+                            "code": "https://github.com/Bigsby/organizer-frontend-vanilla-js"
                         },
                         {
                             "id": "ts",
