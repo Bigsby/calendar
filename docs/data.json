@@ -4,6 +4,12 @@
             "name": "Login"
         },
         {
+            "name": "Contacts view"
+        },
+        {
+            "name": "Overview view"
+        },
+        {
             "name": "Year view"
         },
         {
@@ -28,172 +34,368 @@
             "name": "Update event"
         }
     ],
-    "apis": {
-        
-    },
-    "techs": {
-        "backend": [
-            {
-                "id": "py",
-                "name": "Python - Vanilla"
-            },
-            {
-                "id": "py-django",
-                "name": "Python - Django"
-            },
-            {
-                "id": "js",
-                "name": "NodeJS - Vanilla"
-            },
-            {
-                "id": "js-express",
-                "name": "NodeJS - Express"
-            },
-            {
-                "id": "ts",
-                "name": "NodeJS - Typescript Vanilla"
-            },
-            {
-                "id": "ts-express",
-                "name": "NodeJS - Typescript Express"
-            },
-            {
-                "id": "cs",
-                "name": ".Net C# - Vanilla"
-            },
-            {
-                "id": "cs-mvc",
-                "name": ".Net C# - mvc"
-            },
-            {
-                "id": "fs",
-                "name": ".Net C# - Vanilla"
-            },
-            {
-                "id": "fs-mvc",
-                "name": ".Net C# - mvc"
-            },
-            {
-                "id": "java",
-                "name": "Java - Vanilla"
-            },
-            {
-                "id": "java-play",
-                "name": "Java - Play Framework"
-            },
-            {
-                "id": "scala",
-                "name": "Scala - Vanilla"
-            },
-            {
-                "id": "scala-play",
-                "name": "Scala - Play Framework"
-            },
-            {
-                "id": "cs-az",
-                "name": "C# - Azure Functions"
-            },
-            {
-                "id": "js-az",
-                "name": "NodeJS - Azure Functions"
-            },
-            {
-                "id": "java-az",
-                "name": "NodeJS - Azure Functions"
-            }
-        ],
-        "frontend": [
-            {
-                "id": ""
-            }
-        ],
-        "hosting": [
-            {
-                "id": "az",
-                "name": "Microsoft Azure"
-            },
-            {
-                "id": "aws",
-                "name": "Amazon Web Services"
-            },
-            {
-                "id": "gc",
-                "name": "Google Cloud"
-            },
-            {
-                "id": "g-daddy",
-                "name": "GoDaddy"
-            },
-            {
-                "id": "docker",
-                "name": "Docker containers"
-            },
-            {
-                "id": "kube",
-                "name": "Kubernetes"
-            }
-        ],
-        "persistence": [
-            {
-                "id": "mssql",
-                "name": "Microsoft SQL Server"
-            },
-            {
-                "id": "psql",
-                "name": "PostgreSQL"
-            },
-            {
-                "id": "mysql",
-                "name": "MySQL"
-            },
-            {
-                "id": "mongo",
-                "name": "MongoDB"
-            },
-            {
-                "id": "redis",
-                "name": "Redis"
-            }
-        ],
-        "cicd": [
-            {
-                "id": "az",
-                "name": "Azure Pipelines - Microsoft"
-            },
-            {
-                "id": "circle",
-                "name": "CircleCI"
-            },
-            {
-                "id": "jenkins",
-                "name": "Jenkins"
-            },
-            {
-                "id": "travis",
-                "name": "Travis CI"
-            },
-            {
-                "id": "teamcicy",
-                "name": "TeamCity - JetBrains"
-            }
-        ],
-        "authentication": [
-            {
-                "id": "gg",
-                "name": "Google"
-            },
-            {
-                "id": "ms",
-                "name": "Microsoft"
-            },
-            {
-                "id": "aws",
-                "name": "Amazon"
-            },
-            {
-                "id": "fb",
-                "name": "Facebook"
-            }
-        ]
-    }
+    "apis": [
+        {
+            "id": "contacts",
+            "name": "Contacts",
+            "itms": [
+                {
+                    "id": "get",
+                    "name": "Get / Search",
+                    "endpoint": "/contacts",
+                    "query": [
+                        {
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "calendar",
+            "name": "Calendar",
+            "itms": []
+        }
+    ],
+    "techs": [
+        {
+            "id": "frontend",
+            "name": "Frontend",
+            "items": [
+                {
+                    "id": "js",
+                    "name": "Vanilla"
+                },
+                {
+                    "id": "angular",
+                    "name": "Angular",
+                    "subitems": [
+                        {
+                            "id": "js",
+                            "name": "JavaScript"
+                        },
+                        {
+                            "id": "ts",
+                            "name": "TypeScript"
+                        }
+                    ]
+                },
+                {
+                    "id": "vue",
+                    "name": "VueJS",
+                    "subitems": [
+                        {
+                            "id": "js",
+                            "name": "JavaScript"
+                        },
+                        {
+                            "id": "ts",
+                            "name": "TypeScript"
+                        }
+                    ]
+                },
+                {
+                    "id": "react",
+                    "name": "React"
+                },
+                {
+                    "id": "aurelia",
+                    "name": "Aurelia"
+                }
+            ]
+        },
+        {
+            "id": "backend",
+            "name": "Backend",
+            "items": [
+                {
+                    "id": "py",
+                    "name": "Python",
+                    "subitems": [
+                        {
+                            "id": "vanilla",
+                            "name": "Vanilla"
+                        },
+                        {
+                            "id": "django",
+                            "name": "Django"
+                        }
+                    ]
+                },
+                {
+                    "id": "node",
+                    "name": "NodeJS",
+                    "subitems": [
+                        {
+                            "id": "vanilla",
+                            "name": "Vanilla",
+                            "subitems": [
+                                {
+                                    "id": "js",
+                                    "name": "JavaScript"
+                                },
+                                {
+                                    "id": "ts",
+                                    "name": "TypeScript"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "expresss",
+                            "name": "Express",
+                            "subitems": [
+                                {
+                                    "id": "js",
+                                    "name": "JavaScript"
+                                },
+                                {
+                                    "id": "ts",
+                                    "name": "TypeScript"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "net",
+                    "name": ".Net",
+                    "subitems": [
+                        {
+                            "id": "vanilla",
+                            "name": "Vanilla",
+                            "subitems": [
+                                {
+                                    "id": "cs",
+                                    "name": "C#"
+                                },
+                                {
+                                    "id": "fs",
+                                    "name": "F#"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "mvc",
+                            "name": "MVC",
+                            "subitems": [
+                                {
+                                    "id": "cs",
+                                    "name": "C#"
+                                },
+                                {
+                                    "id": "fs",
+                                    "name": "F#"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "java",
+                    "name": "Java",
+                    "subitems": [
+                        {
+                            "id": "vanilla",
+                            "name": "Vanilla"
+                        },
+                        {
+                            "id": "fx",
+                            "name": "FX"
+                        },
+                        {
+                            "id": "swing",
+                            "name": "Swing"
+                        },
+                        {
+                            "id": "play",
+                            "name": "Play Framework"
+                        }
+                    ]
+                },
+                {
+                    "id": "scala",
+                    "name": "Scala",
+                    "subitems":[
+                        {
+                            "id": "vanilla",
+                            "name": "Vanilla"
+                        },
+                        {
+                            "id": "play",
+                            "name": "Play Framework"
+                        }
+                    ]
+                },
+                {
+                    "id": "az",
+                    "name": "Azure Functions",
+                    "subitems": [
+                        {
+                            "id": "net",
+                            "name": ".Net",
+                            "subitems": [
+                                {
+                                    "id": "cs",
+                                    "name": "C#"
+                                },
+                                {
+                                    "id": "fs",
+                                    "name": "F#"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "node",
+                            "name": "NodeJS"
+                        },
+                        {
+                            "id": "java",
+                            "name": "Java"
+                        }
+                    ]
+                },
+                {
+                    "id": "aws",
+                    "name": "Amazon Lambda",
+                    "subitems":[
+                        {
+                            "id": "node",
+                            "name": "NodeJS",
+                            "subitems": [
+                                {
+                                    "id": "js",
+                                    "name": "JavaScript"
+                                },
+                                {
+                                    "id": "ts",
+                                    "name": "TypeScript"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "py",
+                            "name": "Python"
+                        },
+                        {
+                            "id": "java",
+                            "name": "Java"
+                        },
+                        {
+                            "id": "go",
+                            "name": "Go"
+                        },
+                        {
+                            "id": "rb",
+                            "name": "Ruby"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "persistence",
+            "name": "Persistence",
+            "items": [
+                {
+                    "id": "mssql",
+                    "name": "Microsoft SQL Server"
+                },
+                {
+                    "id": "psql",
+                    "name": "PostgreSQL"
+                },
+                {
+                    "id": "mysql",
+                    "name": "MySQL"
+                },
+                {
+                    "id": "mongo",
+                    "name": "MongoDB"
+                },
+                {
+                    "id": "redis",
+                    "name": "Redis"
+                }
+            ]
+        },
+        {
+            "id": "hosting",
+            "name": "Hosting",
+            "items": [
+                {
+                    "id": "az",
+                    "name": "Azure"
+                },
+                {
+                    "id": "aws",
+                    "name": "Amazon Web Services"
+                },
+                {
+                    "id": "gc",
+                    "name": "Google Cloud"
+                },
+                {
+                    "id": "g-daddy",
+                    "name": "GoDaddy"
+                },
+                {
+                    "id": "docker",
+                    "name": "Docker containers"
+                },
+                {
+                    "id": "kube",
+                    "name": "Kubernetes"
+                }
+            ]
+        },
+        {
+            "id": "cicd",
+            "name": "CI/CD",
+            "items": [
+                {
+                    "id": "az",
+                    "name": "Azure Pipelines"
+                },
+                {
+                    "id": "circle",
+                    "name": "CircleCI"
+                },
+                {
+                    "id": "jenkins",
+                    "name": "Jenkins"
+                },
+                {
+                    "id": "travis",
+                    "name": "Travis CI"
+                },
+                {
+                    "id": "teamcicy",
+                    "name": "TeamCity - JetBrains"
+                }
+            ]
+        },
+        {
+            "id": "auth",
+            "name": "Authentication",
+            "hide": true,
+            "items": [
+                {
+                    "id": "gg",
+                    "name": "Google"
+                },
+                {
+                    "id": "ms",
+                    "name": "Microsoft"
+                },
+                {
+                    "id": "aws",
+                    "name": "Amazon"
+                },
+                {
+                    "id": "fb",
+                    "name": "Facebook"
+                }
+            ]
+        }
+    ]
 }

@@ -1,4 +1,4 @@
-# Web Calendar
+# Web Organizer
 Trying multiple web technologies to build a simple calendar web app.
 
 ## Architecture
