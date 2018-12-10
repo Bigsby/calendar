@@ -63,8 +63,18 @@
             "name": "Frontend",
             "items": [
                 {
-                    "id": "js",
-                    "name": "Vanilla"
+                    "id": "vanilla",
+                    "name": "Vanilla",
+                    "subitems": [
+                        {
+                            "id": "js",
+                            "name": "JavaScript"
+                        },
+                        {
+                            "id": "ts",
+                            "name": "TypeScript"
+                        }
+                    ]
                 },
                 {
                     "id": "angular",
